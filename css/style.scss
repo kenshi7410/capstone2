@@ -11,6 +11,17 @@ body {
   max-width: 1280px;
 }
 
+.btn-admin {
+  font-size: 1rem;
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
 .btn-cart {
   font-size: 2rem;
   position: absolute;
