@@ -123,7 +123,7 @@ const addCart = (id, value) => {
   }
   renderCart();
   if (result.quantity <= 0) {
-    deleteCart();
+    deleteCart(id);
   }
 };
 
