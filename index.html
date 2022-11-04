@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <button id="btn-cart" class="btn-cart">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+    <div class="select">
+      <select name="" id="abc">
+        <option value="All">Tất Cả</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Iphone">Iphone</option>
+      </select>
+    </div>
+
+    <div id="productList" class="productList"></div>
+
+    <div class="row" id="row">
+      <div id="cartshop-full" class="cartshop-full"></div>
+      <div class="cartshop">
+        <h2>Giỏ Hàng</h2>
+        <span id="close" class="close"><i class="fa-solid fa-xmark"></i></span>
+        <table id="cartshop"></table>
+        <div class="cartshop-bottom">
+          <h3>Tổng Tiền : <span id="allMoney"></span></h3>
+          <button id="btn-pay">Thanh Toán</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./model/products.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

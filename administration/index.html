@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quản trị</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">Navbar</div>
+        <div class="nav">
+          <a href="#">Sản Phẩm</a>
+          <a href="#">Người Dùng</a>
+          <a href="#">Thống kê</a>
+        </div>
+      </div>
+    </header>
+    <section class="addproduct">
+      <div class="container">
+        <h2>Quản Lí Sản Phẩm</h2>
+        <div class="name">
+          <div>
+            <p>Tên Sản Phẩm:</p>
+            <input
+              type="text"
+              placeholder="nhập tên sản phẩm"
+              id="txtnameProduct"
+            />
+          </div>
+          <div>
+            <p>Giá:</p>
+            <input
+              type="text"
+              placeholder="nhập giá sản phẩm"
+              id="txtpriceProduct"
+            />
+          </div>
+        </div>
+        <div class="camera">
+          <div>
+            <p>screen:</p>
+            <input
+              type="text"
+              placeholder="nhập loại màn hình"
+              id="txtscreenProduct"
+            />
+          </div>
+          <div>
+            <p>backCamera:</p>
+            <input
+              type="text"
+              placeholder="nhập thông số camera sau"
+              id="txtbackCameraProduct"
+            />
+          </div>
+          <div>
+            <p>frontCamera:</p>
+            <input
+              type="text"
+              placeholder="nhập thông số camera sau"
+              id="txtfrontCameraProduct"
+            />
+          </div>
+        </div>
+        <div class="img">
+          <div>
+            <p>Phân Loại Sản Phẩm:</p>
+            <input
+              type="text"
+              placeholder="VD: nhập vào iphone or samsung "
+              id="txttypeProduct"
+            />
+          </div>
+          <div>
+            <p>Hình Ảnh:</p>
+            <input
+              type="text"
+              placeholder="để link ảnh sản phẩm"
+              id="txtimgProduct"
+            />
+          </div>
+        </div>
+        <div class="describe">
+          <p>Mô Tả Sản Phẩm:</p>
+          <input type="text" placeholder="mô tả sản phẩm" id="txtdescProduct" />
+        </div>
+      </div>
+    </section>
+    <section class="mainbody">
+      <div class="container">
+        <button id="txtAdd" class="btn-add">Thêm Mới Sản Phẩm</button>
+        <button id="txtUpdate" class="btn-update" style="display: none">
+          Cập Nhật
+        </button>
+      </div>
+    </section>
+    <section class="productList">
+      <div class="container">
+        <table id="productListTable"></table>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"
+      integrity="sha512-0qU9M9jfqPw6FKkPafM3gy2CBAvUWnYVOfNPDYKVuRTel1PrciTj+a9P3loJB+j0QmN2Y0JYQmkBBS8W+mbezg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+    <script src="./productAdmin.js"></script>
+  </body>
+</html>
