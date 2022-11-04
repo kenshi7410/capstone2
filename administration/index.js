@@ -251,7 +251,7 @@ const checkLenght = (val, spanId, min, max) => {
 };
 //pattern check name
 const string = (val, spanId) => {
-  var pattern = /^[A-z ]+$/g;
+  var pattern = /^[A-z 0-9 ]+$/g;
   if (pattern.test(val)) {
     return true;
   }
